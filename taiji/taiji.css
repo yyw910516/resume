@@ -23,6 +23,7 @@ body{
     border-bottom-width: 100px;
     border-bottom-color: black;
     border-radius: 50%;
+    
 }
 /*.taiji::before{
     content: '';
@@ -56,4 +57,18 @@ body{
     background: black;
     border: 40px solid white;
     border-radius: 50%;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.taiji:hover{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
